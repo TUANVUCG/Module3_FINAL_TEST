@@ -3,6 +3,14 @@
 <html>
 <head>
     <title>List</title>
+    <style>
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border : 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <h1>List</h1>
@@ -13,16 +21,16 @@
 </form>
 <table>
     <tr>
-        <th>#</th>
+        <th style="font-weight: bold">#</th>
         <th>Product Name</th>
         <th>Price</th>
         <th>Amount</th>
         <th>Color</th>
-        <th>Category</th>
+<%--        <th>Category</th>--%>
     </tr>
     <c:forEach items="${productList}" var="product">
         <tr>
-            <td><c:out value="${product.productId}"/></td>
+            <td name="productId"><c:out value="${product.productId}"/></td>
             <td><c:out value="${product.productName}"/></td>
             <td><c:out value="${product.price}"/></td>
             <td><c:out value="${product.amount}"/></td>

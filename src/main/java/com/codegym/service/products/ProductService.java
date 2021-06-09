@@ -38,4 +38,14 @@ public class ProductService implements IProductService{
     public List<Product> findByName(String name) {
         return productDAO.findByName(name);
     }
+
+    @Override
+    public int findCategoryIdByProductId(int productId) {
+        return productDAO.findCategoryIdByProductId(productId);
+    }
+
+    @Override
+    public String findCategoryName(int productId) {
+        return productDAO.findCategoryName(productId);
+    }
 }

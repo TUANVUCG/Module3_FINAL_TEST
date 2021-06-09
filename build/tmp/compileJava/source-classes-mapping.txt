@@ -12,7 +12,9 @@ com/codegym/DAO/SQLConnection.java
  com.codegym.DAO.SQLConnection
 com/codegym/DAO/products/IProductDAO.java
  com.codegym.DAO.products.IProductDAO
-com/codegym/controller/ProductServlet.java
- com.codegym.controller.ProductServlet
 com/codegym/service/products/ProductService.java
  com.codegym.service.products.ProductService
+com/codegym/DAO/category/CategoryDAO.java
+ com.codegym.DAO.category.CategoryDAO
+com/codegym/controller/ProductServlet.java
+ com.codegym.controller.ProductServlet
